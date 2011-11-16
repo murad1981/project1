@@ -57,4 +57,8 @@
     return YES;
 }
 
+- (IBAction)buttonClicked:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"warning" message:@"this is a warning" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil] ;
+    [alert show];
+}
 @end
