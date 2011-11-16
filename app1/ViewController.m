@@ -34,6 +34,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    NSLog(@"this is a test");
+    NSLog(@"this is test2");
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -60,5 +62,6 @@
 - (IBAction)buttonClicked:(id)sender {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"warning" message:@"this is a warning" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil] ;
     [alert show];
+    NSLog(@"the button has been pressed"); 
 }
 @end
