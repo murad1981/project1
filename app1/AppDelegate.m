@@ -23,6 +23,8 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     NSLog(@"app delegate nslog");
+    NSLog(@"app delegate another nslog");
+    
     return YES;
 }
 
